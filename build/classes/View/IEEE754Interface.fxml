@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="286.0" prefWidth="731.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.IEEE754Controller">
+  <tabs>
+      <Tab text="32 BITS A DECIMAL">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="274.0" prefWidth="580.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <TextField fx:id="txt32bitsToDecimal" editable="false" layoutX="21.0" layoutY="193.0" prefHeight="31.0" prefWidth="509.0" style="-fx-border-color: #000000; -fx-background-color: #ffdfe8;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="21.0" layoutY="161.0" text="Decimal:">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtSign32bitsToDecimal" editable="false" layoutX="21.0" layoutY="118.0" prefHeight="31.0" prefWidth="68.0" style="-fx-border-color: #000000;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtExpo32bitsToDecimal" editable="false" layoutX="89.0" layoutY="118.0" style="-fx-border-color: #000000;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="36.0" layoutY="89.0" text="Signo">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="144.0" layoutY="89.0" text="Exponente">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnConverter32bitsToDecimal" layoutX="599.0" layoutY="45.0" mnemonicParsing="false" onAction="#converter32bitsToDecimal" prefHeight="30.0" prefWidth="118.0" style="-fx-border-color: #3C552D; -fx-background-color: #347928;" text="Convertir" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnClean32bitsToDecimal" layoutX="543.0" layoutY="193.0" mnemonicParsing="false" onAction="#clean32bitsToDecimal" prefHeight="30.0" prefWidth="174.0" style="-fx-border-color: #740938; -fx-background-color: #CC2B52;" text="Limpiar" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txtMantisa32bitsToDecimal" editable="false" layoutX="275.0" layoutY="118.0" prefHeight="31.0" prefWidth="441.0" style="-fx-border-color: #000000;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtIEEE32bitsToDecimal" layoutX="21.0" layoutY="45.0" prefHeight="31.0" prefWidth="566.0" style="-fx-border-color: #000000; -fx-background-color: #e4ffe0;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="383.0" layoutY="89.0" text="Mantisa">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="14.0" text="IEEE a 32 bits:">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="64 BITS A DECIMAL">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="274.0" prefWidth="580.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <TextField fx:id="txt64bitsToDecimal" layoutX="21.0" layoutY="193.0" prefHeight="31.0" prefWidth="501.0" style="-fx-border-color: #000000; -fx-background-color: #ffdfe8;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="21.0" layoutY="161.0" text="Decimal:">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtSign64bitsToDecimal" editable="false" layoutX="21.0" layoutY="118.0" prefHeight="31.0" prefWidth="68.0" style="-fx-border-color: #000000;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtExpo64bitsToDecimal" editable="false" layoutX="89.0" layoutY="118.0" style="-fx-border-color: #000000;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="36.0" layoutY="89.0" text="Signo">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="144.0" layoutY="89.0" text="Exponente">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnConverter64bitsToDecimal" layoutX="595.0" layoutY="45.0" mnemonicParsing="false" onAction="#converter64bitsToDecimal" prefHeight="30.0" prefWidth="123.0" style="-fx-border-color: #3C552D; -fx-background-color: #347928;" text="Convertir" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnClean64bitsToDecimal" layoutX="534.0" layoutY="194.0" mnemonicParsing="false" onAction="#clean64bitsToDecimal" prefHeight="30.0" prefWidth="184.0" style="-fx-border-color: #740938; -fx-background-color: #CC2B52;" text="Limpiar" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txtMantisa64bitsToDecimal" editable="false" layoutX="275.0" layoutY="118.0" prefHeight="31.0" prefWidth="446.0" style="-fx-border-color: #000000;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtIEEE64bitsToDecimal" layoutX="21.0" layoutY="45.0" prefHeight="31.0" prefWidth="563.0" style="-fx-border-color: #000000; -fx-background-color: #e4ffe0;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="383.0" layoutY="89.0" text="Mantisa">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="14.0" text="IEEE a 64 bits:">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="DECIMAL A 32 BITS">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="274.0" prefWidth="580.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <TextField fx:id="txtDecimalTo32bits" layoutX="93.0" layoutY="17.0" prefHeight="31.0" prefWidth="464.0" style="-fx-border-color: #000000; -fx-background-color: #e4ffe0;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtSignDecimalTo32bits" editable="false" layoutX="22.0" layoutY="167.0" prefHeight="31.0" prefWidth="68.0" style="-fx-border-color: #6A1E55; -fx-background-color: #F5EFFF;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="26.0" layoutY="21.0" text="Decimal:">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtExpoDecimalTo32bits" editable="false" layoutX="90.0" layoutY="167.0" style="-fx-border-color: #1F509A; -fx-background-color: #D4EBF8;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="37.0" layoutY="138.0" text="Signo">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="145.0" layoutY="138.0" text="Exponente">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnConverterDecimalTo32bits" layoutX="570.0" layoutY="17.0" mnemonicParsing="false" onAction="#converterDecimalTo32bits" prefHeight="30.0" prefWidth="145.0" style="-fx-border-color: #3C552D; -fx-background-color: #347928;" text="Convertir" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txtMantisaDecimalTo32bits" editable="false" layoutX="276.0" layoutY="167.0" prefHeight="31.0" prefWidth="439.0" style="-fx-border-color: #CC2B52; -fx-background-color: #FFE3E3;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btnCleanDecimalTo32bits" layoutX="289.0" layoutY="216.0" mnemonicParsing="false" onAction="#cleanDecimalTo32bits" prefHeight="25.0" prefWidth="115.0" style="-fx-border-color: #740938; -fx-background-color: #CC2B52;" text="Limpiar" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="387.0" layoutY="138.0" text="Mantisa">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtIEEEDecimalTo32bits" editable="false" layoutX="22.0" layoutY="95.0" prefHeight="31.0" prefWidth="693.0" style="-fx-border-color: #000000;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="26.0" layoutY="64.0" text="IEEE a 32 bits:">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="DECIMAL A 64 BITS">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="274.0" prefWidth="580.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <TextField fx:id="txtDecimalTo64bits" layoutX="93.0" layoutY="17.0" prefHeight="31.0" prefWidth="464.0" style="-fx-border-color: #000000; -fx-background-color: #e4ffe0;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtSignDecimalTo64bits" editable="false" layoutX="22.0" layoutY="167.0" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: #F5EFFF; -fx-border-color: #6A1E55;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="26.0" layoutY="21.0" text="Decimal:">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtExpoDecimalTo64bits" editable="false" layoutX="90.0" layoutY="167.0" style="-fx-background-color: #D4EBF8; -fx-border-color: #1F509A;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="37.0" layoutY="138.0" text="Signo">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="145.0" layoutY="138.0" text="Exponente">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnConverterDecimalTo64bits" layoutX="569.0" layoutY="17.0" mnemonicParsing="false" onAction="#btnConverterDecimalTo64bits" prefHeight="30.0" prefWidth="146.0" style="-fx-background-color: #347928; -fx-border-color: #3C552D;" text="Convertir" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnCleanDecimalTo64bits" layoutX="287.0" layoutY="216.0" mnemonicParsing="false" onAction="#cleanDecimalTo64bits" prefHeight="25.0" prefWidth="115.0" style="-fx-border-color: #740938; -fx-background-color: #CC2B52;" text="Limpiar" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txtMantisaDecimalTo64bits" editable="false" layoutX="276.0" layoutY="167.0" prefHeight="31.0" prefWidth="441.0" style="-fx-background-color: #FFE3E3; -fx-border-color: #CC2B52;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="387.0" layoutY="138.0" text="Mantisa">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtIEEEDecimalTo64bits" editable="false" layoutX="22.0" layoutY="95.0" prefHeight="31.0" prefWidth="694.0" style="-fx-border-color: #000000;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="26.0" layoutY="64.0" text="IEEE a 64 bits:">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
