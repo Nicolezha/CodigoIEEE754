@@ -174,7 +174,7 @@ public class IEEE754Controller {
             alert.showAndWait();
             return;
         }
-        if (ieee754.isDecimal(txtIEEE32bitsToDecimal.getText())) {
+        if (!ieee754.isDecimal(txtIEEE32bitsToDecimal.getText())) {
             Alert alert = new Alert(Alert.AlertType.ERROR, "No se permiten letras o espacios en blanco.", ButtonType.CLOSE);
             alert.showAndWait();
             return;
@@ -200,7 +200,7 @@ public class IEEE754Controller {
             alert.showAndWait();
             return;
         }
-        if (ieee754.isDecimal(txtIEEE64bitsToDecimal.getText())) {
+        if (!ieee754.isDecimal(txtIEEE64bitsToDecimal.getText())) {
             Alert alert = new Alert(Alert.AlertType.ERROR, "No se permiten letras o espacios en blanco.", ButtonType.CLOSE);
             alert.showAndWait();
             return;
